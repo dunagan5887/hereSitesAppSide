@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		882F05E01A575D9A0011B87D /* LocationNetworkRequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882F05DF1A575D9A0011B87D /* LocationNetworkRequestHandler.swift */; };
+		8845568E1A5A153E006E3536 /* JsonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8845568D1A5A153E006E3536 /* JsonUtility.swift */; };
+		884EE7E31A6DA68E00713258 /* HereNetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884EE7E21A6DA68E00713258 /* HereNetworkRequest.swift */; };
 		886926451A351A2A00A853E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886926441A351A2A00A853E3 /* AppDelegate.swift */; };
 		886926471A351A2A00A853E3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886926461A351A2A00A853E3 /* ViewController.swift */; };
 		8869264A1A351A2A00A853E3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 886926481A351A2A00A853E3 /* Main.storyboard */; };
@@ -18,6 +21,11 @@
 		886926691A35222200A853E3 /* AppNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886926681A35222200A853E3 /* AppNavigationController.swift */; };
 		8869266B1A3524A100A853E3 /* LocationHereController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869266A1A3524A100A853E3 /* LocationHereController.swift */; };
 		8869266D1A3524DE00A853E3 /* LocationHereTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869266C1A3524DE00A853E3 /* LocationHereTable.swift */; };
+		8869266F1A35806C00A853E3 /* LocationHereableTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8869266E1A35806C00A853E3 /* LocationHereableTableCell.swift */; };
+		886926751A35824E00A853E3 /* LocationHereableTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 886926741A35824E00A853E3 /* LocationHereableTableCell.xib */; };
+		88B8D9DF1A52004E0096B3BD /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8D9DE1A52004E0096B3BD /* NetworkRequest.swift */; };
+		88B8D9E21A521A330096B3BD /* TestNetworkRequestResponseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8D9E11A521A330096B3BD /* TestNetworkRequestResponseHandler.swift */; };
+		88B8D9E51A5221D40096B3BD /* Test_Location_Establish.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88B8D9E41A5221D40096B3BD /* Test_Location_Establish.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +39,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		882F05DF1A575D9A0011B87D /* LocationNetworkRequestHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationNetworkRequestHandler.swift; sourceTree = "<group>"; };
+		8845568D1A5A153E006E3536 /* JsonUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonUtility.swift; sourceTree = "<group>"; };
+		884EE7E21A6DA68E00713258 /* HereNetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HereNetworkRequest.swift; sourceTree = "<group>"; };
 		8869263F1A351A2A00A853E3 /* Single Page Test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Single Page Test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		886926431A351A2A00A853E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		886926441A351A2A00A853E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +57,11 @@
 		886926681A35222200A853E3 /* AppNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppNavigationController.swift; sourceTree = "<group>"; };
 		8869266A1A3524A100A853E3 /* LocationHereController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHereController.swift; sourceTree = "<group>"; };
 		8869266C1A3524DE00A853E3 /* LocationHereTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHereTable.swift; sourceTree = "<group>"; };
+		8869266E1A35806C00A853E3 /* LocationHereableTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationHereableTableCell.swift; sourceTree = "<group>"; };
+		886926741A35824E00A853E3 /* LocationHereableTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationHereableTableCell.xib; sourceTree = "<group>"; };
+		88B8D9DE1A52004E0096B3BD /* NetworkRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkRequest.swift; sourceTree = "<group>"; };
+		88B8D9E11A521A330096B3BD /* TestNetworkRequestResponseHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestNetworkRequestResponseHandler.swift; sourceTree = "<group>"; };
+		88B8D9E41A5221D40096B3BD /* Test_Location_Establish.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Test_Location_Establish.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,9 +106,16 @@
 				886926441A351A2A00A853E3 /* AppDelegate.swift */,
 				886926681A35222200A853E3 /* AppNavigationController.swift */,
 				886926661A351BD900A853E3 /* EstablishLocationController.swift */,
+				884EE7E21A6DA68E00713258 /* HereNetworkRequest.swift */,
+				8845568D1A5A153E006E3536 /* JsonUtility.swift */,
 				886926641A351A8B00A853E3 /* LoginController.swift */,
 				8869266A1A3524A100A853E3 /* LocationHereController.swift */,
 				8869266C1A3524DE00A853E3 /* LocationHereTable.swift */,
+				8869266E1A35806C00A853E3 /* LocationHereableTableCell.swift */,
+				886926741A35824E00A853E3 /* LocationHereableTableCell.xib */,
+				882F05DF1A575D9A0011B87D /* LocationNetworkRequestHandler.swift */,
+				88B8D9DE1A52004E0096B3BD /* NetworkRequest.swift */,
+				88B8D9E11A521A330096B3BD /* TestNetworkRequestResponseHandler.swift */,
 				886926461A351A2A00A853E3 /* ViewController.swift */,
 				886926481A351A2A00A853E3 /* Main.storyboard */,
 				8869264B1A351A2A00A853E3 /* Images.xcassets */,
@@ -114,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				8869265A1A351A2A00A853E3 /* Single_Page_TestTests.swift */,
+				88B8D9E41A5221D40096B3BD /* Test_Location_Establish.swift */,
 				886926581A351A2A00A853E3 /* Supporting Files */,
 			);
 			path = "Single Page TestTests";
@@ -210,6 +234,7 @@
 				8869264A1A351A2A00A853E3 /* Main.storyboard in Resources */,
 				8869264F1A351A2A00A853E3 /* LaunchScreen.xib in Resources */,
 				8869264C1A351A2A00A853E3 /* Images.xcassets in Resources */,
+				886926751A35824E00A853E3 /* LocationHereableTableCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,12 +252,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				882F05E01A575D9A0011B87D /* LocationNetworkRequestHandler.swift in Sources */,
+				88B8D9E21A521A330096B3BD /* TestNetworkRequestResponseHandler.swift in Sources */,
+				884EE7E31A6DA68E00713258 /* HereNetworkRequest.swift in Sources */,
+				8845568E1A5A153E006E3536 /* JsonUtility.swift in Sources */,
 				886926671A351BD900A853E3 /* EstablishLocationController.swift in Sources */,
 				886926471A351A2A00A853E3 /* ViewController.swift in Sources */,
 				8869266B1A3524A100A853E3 /* LocationHereController.swift in Sources */,
+				8869266F1A35806C00A853E3 /* LocationHereableTableCell.swift in Sources */,
 				8869266D1A3524DE00A853E3 /* LocationHereTable.swift in Sources */,
 				886926691A35222200A853E3 /* AppNavigationController.swift in Sources */,
 				886926651A351A8B00A853E3 /* LoginController.swift in Sources */,
+				88B8D9DF1A52004E0096B3BD /* NetworkRequest.swift in Sources */,
 				886926451A351A2A00A853E3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -241,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88B8D9E51A5221D40096B3BD /* Test_Location_Establish.swift in Sources */,
 				8869265B1A351A2A00A853E3 /* Single_Page_TestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,6 +457,7 @@
 				886926601A351A2A00A853E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		886926611A351A2A00A853E3 /* Build configuration list for PBXNativeTarget "Single Page TestTests" */ = {
 			isa = XCConfigurationList;
@@ -433,6 +466,7 @@
 				886926631A351A2A00A853E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

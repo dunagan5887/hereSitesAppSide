@@ -49,6 +49,7 @@
                         <viewControllerLayoutGuide type="bottom" id="hu9-Zu-4Yt"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="qaN-3p-smw">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o55-kC-Uzn">
@@ -103,7 +104,6 @@
                     </view>
                     <connections>
                         <outlet property="establishLocationButton" destination="ts0-yc-t6i" id="ESG-VJ-l8R"/>
-
                         <outlet property="signOutButton" destination="o55-kC-Uzn" id="tqf-dd-TUz"/>
                     </connections>
                 </viewController>
@@ -120,11 +120,21 @@
                         <viewControllerLayoutGuide type="bottom" id="ZLn-g3-PEL"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ycC-nM-NVI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xOL-sL-kGf" customClass="LocationHereTable" customModule="Single_Page_Test" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LocationHereTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6RL-HZ-9bq" customClass="LocationHereTable" customModule="Single_Page_Test" customModuleProvider="target">
+                                    <rect key="frame" x="-83" y="-54" width="600" height="600"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <outlet property="dataSource" destination="pYa-vg-fK1" id="1Mj-8h-qpa"/>
+                                        <outlet property="delegate" destination="pYa-vg-fK1" id="SeA-74-MbU"/>
+                                    </connections>
+                                </tableView>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                                 </variation>
@@ -146,6 +156,9 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="LocationHereTableInstance" destination="6RL-HZ-9bq" id="EYc-FK-XGl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Lt-vg-oPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
