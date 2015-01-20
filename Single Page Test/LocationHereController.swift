@@ -11,7 +11,7 @@ import UIKit
 
 class LocationHereController : ViewController, UITableViewDataSource, UITableViewDelegate
 {
-    @IBOutlet weak var LocationHereTableInstance: LocationHereTable!
+    @IBOutlet var LocationHereTableInstance: LocationHereTable!
     
     var hereablesAtLocation : Array<Dictionary<String, String>> = Array<Dictionary<String, String>>();
     
@@ -58,22 +58,23 @@ class LocationHereController : ViewController, UITableViewDataSource, UITableVie
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
-        let cell:LocationHereTableCell = LocationHereTableCell(style:UITableViewCellStyle.Default, reuseIdentifier:"cell");
+        var cell:LocationHereTableCell = self.LocationHereTableInstance.dequeueReusableCellWithIdentifier("hereableTableCell") as LocationHereTableCell;
+        //var cell:LocationHereTableCell = LocationHereTableCell(style:UITableViewCellStyle.Default, reuseIdentifier:"hereableTableCell");
         
         var userHereableDataDictionary = self.hereablesAtLocation[indexPath.row]
         
         println(userHereableDataDictionary);
         println(cell);
         
-        // MUST ensure that the dictionary contains the values below
-        
-        cell.statusLabel!.text = userHereableDataDictionary["status"];
-        cell.ageLabel!.text = userHereableDataDictionary["age"];
-        cell.genderLabel!.text = userHereableDataDictionary["gender"];
-        cell.nameLabel!.text = userHereableDataDictionary["name"];
-        
-        println(cell.statusLabel!.text);
+        cell.loadItem(userHereableDataDictionary);
         
         return cell
+    }
+    
+    override func viewDidLoad()
+    {
+        var nib = UINib(nibName: "LocationHereableTableCell", bundle: nil);
+        
+        LocationHereTableInstance.registerNib(nib, forCellReuseIdentifier: "hereableTableCell");
     }
 }

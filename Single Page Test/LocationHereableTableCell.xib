@@ -18,68 +18,69 @@
                             <rect key="frame" x="360" y="0.0" width="120" height="100"/>
                         </variation>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SUI-nX-FgO">
-                        <rect key="frame" x="130" y="8" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                            <rect key="frame" x="8" y="4" width="46" height="21"/>
-                        </variation>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A4K-5i-MT8">
-                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                            <rect key="frame" x="68" y="4" width="31" height="21"/>
-                        </variation>
-                    </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PGl-Sf-LCt">
-                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                            <rect key="frame" x="122" y="4" width="13" height="21"/>
-                        </variation>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O3R-2H-r7V">
                         <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                         <nil key="highlightedColor"/>
                         <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                            <rect key="frame" x="8" y="33" width="50" height="21"/>
+                            <rect key="frame" x="8" y="33" width="344" height="59"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7RW-66-AP2">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="8" y="8" width="42" height="21"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xh4-3O-tA4">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="73" y="8" width="31" height="21"/>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="G" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o4y-Tu-cQH">
+                        <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                            <rect key="frame" x="137" y="8" width="13" height="21"/>
                         </variation>
                     </label>
                 </subviews>
                 <variation key="default">
                     <mask key="subviews">
-                        <exclude reference="A4K-5i-MT8"/>
-                        <exclude reference="PGl-Sf-LCt"/>
                         <exclude reference="O3R-2H-r7V"/>
+                        <exclude reference="7RW-66-AP2"/>
+                        <exclude reference="xh4-3O-tA4"/>
+                        <exclude reference="o4y-Tu-cQH"/>
                     </mask>
                 </variation>
                 <variation key="heightClass=regular-widthClass=compact">
                     <mask key="subviews">
-                        <include reference="A4K-5i-MT8"/>
-                        <include reference="PGl-Sf-LCt"/>
                         <include reference="O3R-2H-r7V"/>
+                        <include reference="7RW-66-AP2"/>
+                        <include reference="xh4-3O-tA4"/>
+                        <include reference="o4y-Tu-cQH"/>
                     </mask>
                 </variation>
             </tableViewCellContentView>
             <connections>
-                <outlet property="ageLabel" destination="A4K-5i-MT8" id="WMO-rn-ayp"/>
-                <outlet property="backgroundImage" destination="GVK-Be-B4g" id="lkB-lO-PrS"/>
+                <outlet property="ageLabel" destination="xh4-3O-tA4" id="eJT-sF-hfv"/>
+                <outlet property="backgroundImage" destination="GVK-Be-B4g" id="Mty-8Y-mfj"/>
                 <outlet property="backgroundView" destination="GVK-Be-B4g" id="Rzg-bj-EbD"/>
-                <outlet property="genderLabel" destination="PGl-Sf-LCt" id="mRb-cO-Reg"/>
-                <outlet property="nameLabel" destination="SUI-nX-FgO" id="hRI-3o-uEJ"/>
-                <outlet property="statusLabel" destination="O3R-2H-r7V" id="lpm-ZK-mVK"/>
-                <outlet property="titleLabel" destination="SUI-nX-FgO" id="srV-Tg-16a"/>
+                <outlet property="genderLabel" destination="o4y-Tu-cQH" id="qXQ-zx-vTQ"/>
+                <outlet property="statusLabel" destination="O3R-2H-r7V" id="xIf-eC-Lf0"/>
+                <outlet property="titleLabel" destination="7RW-66-AP2" id="WlJ-Tx-7hS"/>
             </connections>
-            <point key="canvasLocation" x="330" y="184"/>
+            <point key="canvasLocation" x="331" y="165"/>
         </tableViewCell>
     </objects>
 </document>
