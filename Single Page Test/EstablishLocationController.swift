@@ -18,16 +18,41 @@ class EstablishLocationController: ViewController
     
     @IBOutlet weak var establishLocationButton: UIButton!
     
+    @IBOutlet weak var statusTextField: UITextField!
+    var status_has_been_updated : Bool = false;
+    
     @IBAction func executeSignOut(sender: UIButton, forEvent event: UIEvent)
     {
         self.transitionToLoginController();
     }
     
+    @IBAction func statusBeginEdit(sender: UITextField)
+    {
+        if (!self.status_has_been_updated)
+        {
+            statusTextField.text = "";
+        }
+        self.status_has_been_updated = true;
+        statusTextField.textColor = UIColor.blackColor();
+    }
+    
     @IBAction func executeEstablishLocation(sender: UIButton, forEvent event: UIEvent)
     {
-        self.establishAtLocation("1",
+        var user_status = statusTextField.text;
+        
+        // Make sure user entered a status
+        if ((!self.status_has_been_updated)
+            ||
+            (user_status == "")
+        )
+        {
+            self.promptUserToEnterStatus();
+            return;
+        }
+        
+        self.establishAtLocation("2",
             location_code_to_establish_at : "chicago",
-            status_to_establish : "Testing status for user with id 1");
+            status_to_establish : user_status);
         
         // MUST Do something here to tell user you're establishing at location
     }
@@ -76,6 +101,28 @@ class EstablishLocationController: ViewController
     func establishAtLocationHandlerFailure()
     {
         
+    }
+    
+    // MUST ensure that this is called when coming from location hereable list to this screen
+    override func viewDidLoad()
+    {
+        self.resetStatusTextField();
+        statusTextField.text = "Enter status here";
+        statusTextField.textColor = UIColor.blackColor();
+    }
+    
+    func resetStatusTextField()
+    {
+        self.status_has_been_updated = false;
+        statusTextField.clearsOnBeginEditing = true;
+        //statusTextField.clearsOnInsertion = true;
+    }
+    
+    func promptUserToEnterStatus()
+    {
+        self.resetStatusTextField();
+        statusTextField.textColor = UIColor.redColor();
+        statusTextField.text = "Please Enter Status Here";
     }
     
     func transitionToLoginController()

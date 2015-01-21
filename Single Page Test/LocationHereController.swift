@@ -47,7 +47,10 @@ class LocationHereController : ViewController, UITableViewDataSource, UITableVie
     
     func transitionToThisController()
     {
-        self.navControllerToPushOnto!.pushViewController(self, animated : false);
+        dispatch_async(dispatch_get_main_queue())
+        {
+            self.navControllerToPushOnto!.pushViewController(self, animated : false);
+        }
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int

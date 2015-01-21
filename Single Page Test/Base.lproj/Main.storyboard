@@ -85,6 +85,17 @@
                                     <action selector="executeEstablishLocation:forEvent:" destination="lhw-JH-vwX" eventType="touchDown" id="tma-bf-Uz4"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Xz-JU-RNl">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="71" y="251" width="259" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="statusBeginEdit:" destination="lhw-JH-vwX" eventType="editingDidBegin" id="qxX-gJ-hbb"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -92,6 +103,7 @@
                                 <exclude reference="o55-kC-Uzn"/>
                                 <exclude reference="Z5u-vx-XFX"/>
                                 <exclude reference="ts0-yc-t6i"/>
+                                <exclude reference="1Xz-JU-RNl"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -99,12 +111,14 @@
                                 <include reference="o55-kC-Uzn"/>
                                 <include reference="Z5u-vx-XFX"/>
                                 <include reference="ts0-yc-t6i"/>
+                                <include reference="1Xz-JU-RNl"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="establishLocationButton" destination="ts0-yc-t6i" id="ESG-VJ-l8R"/>
                         <outlet property="signOutButton" destination="o55-kC-Uzn" id="tqf-dd-TUz"/>
+                        <outlet property="statusTextField" destination="1Xz-JU-RNl" id="n6Q-ih-FPH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lhH-MS-kg2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -126,15 +140,6 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="xOL-sL-kGf" customClass="LocationHereTable" customModule="Single_Page_Test" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <tableView key="tableFooterView" clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="LocationHereTable" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="6RL-HZ-9bq" customClass="LocationHereTable" customModule="Single_Page_Test" customModuleProvider="target">
-                                    <rect key="frame" x="-83" y="-54" width="600" height="600"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <connections>
-                                        <outlet property="dataSource" destination="pYa-vg-fK1" id="1Mj-8h-qpa"/>
-                                        <outlet property="delegate" destination="pYa-vg-fK1" id="SeA-74-MbU"/>
-                                    </connections>
-                                </tableView>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                                 </variation>
@@ -157,7 +162,7 @@
                         </variation>
                     </view>
                     <connections>
-                        <outlet property="LocationHereTableInstance" destination="6RL-HZ-9bq" id="EYc-FK-XGl"/>
+                        <outlet property="LocationHereTableInstance" destination="xOL-sL-kGf" id="obm-lH-v38"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Lt-vg-oPA" userLabel="First Responder" sceneMemberID="firstResponder"/>
